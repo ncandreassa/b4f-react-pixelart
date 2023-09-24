@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    margin: 14px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgb(208, 26, 126);
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    border: .5px solid rgb(233, 233, 233);
+    height: 20px;
+}
+
+.cell {
+    border: .5px solid rgb(233, 233, 233);
+    background-color: #f4f4f4;
+    height: 20px;
+    width: 20px;
+}
+
+.colors {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    gap: 24px;
+    width: 20%;
+}
+
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.previousColor {
+    width: 24px;
+    height: 24px;
+   cursor: pointer;
+   border-radius: 2px;
+}
+
+.previousColor:hover{
+    transform: scale(1.2);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin-left: 24px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.active  {
+    background-color: rgba(173, 173, 173, 0.377);
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+    transform: scaleX(-1);
+}
